@@ -1,4 +1,12 @@
-This is my first [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Blog Demo
+
+This is my first next.js project as a beginner to web-development framework.
+
+## Features
+*  Displays a list of posts in the main menu, as well as in its own page.
+*  Full details each post when clicked.
+*  Navigation between pages through Next.js App Router.
+*  Data fetching from server-side.
 
 ## Getting Started
 
