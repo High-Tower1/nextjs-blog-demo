@@ -1,12 +1,8 @@
 import Link from "next/link"
-import { Post } from "@/types/post";
-
-interface PostList {
-    posts: Post[];
-}
+import { PostProps, PostListProps } from "@/types/post";
 
 // Posts list component
-function PostsList({posts}: PostList) {
+function PostsList({posts}: PostListProps) {
   return (
     <div className="post-list">
         {

@@ -1,10 +1,10 @@
-function page() {
+function AboutPage() {
   return (
     <>
-        <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi voluptate incidunt labore unde sequi excepturi et corrupti magnam sunt dolore harum voluptas deleniti minima veniam, aliquid animi deserunt adipisci!</p>
+        <h1>About</h1>
+        <p>Welcome to my Next.js Blog Demo. This application was built to showcase the power of Next.js, including features like dynamic routing, server-side data fetching, and client-side state management for theme switching.</p>
     </>
   )
 }
 
-export default page
+export default AboutPage

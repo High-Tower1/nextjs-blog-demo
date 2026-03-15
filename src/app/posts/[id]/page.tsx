@@ -1,23 +1,14 @@
-import { getDetailPost } from "@/lib/api";
+import PostDetail from "@/components/PostDetail";
+import { getPostDetail } from "@/lib/api";
+import { Page } from "@/types/page";
 
-interface Page {
-    params: {
-        id: number;
-    }
-}
-
-async function page({params}: Page) {
+async function PostDetailPage({params}: Page) {
     const {id} = await params;
-    const post = await getDetailPost(id);
-    console.log(post);
+    const post = await getPostDetail(id);
+
   return (
-    <div className="post-detail">
-        <h1>{post.title}</h1>
-        <div className="content">
-            <p>{post.body}</p>
-        </div>
-    </div>
+    <PostDetail post={post}/>
   )
 }
 
-export default page
+export default PostDetailPage
